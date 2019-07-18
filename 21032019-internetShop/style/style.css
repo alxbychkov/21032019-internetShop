@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.top {
+  border-bottom: 2px solid black;
+}
+
+.head .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.head .header .navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .header .navmenu .logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 55px;
+  background: url("/icon/logo.jpg") no-repeat;
+}
+
+.head .header .navmenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.head .header .navmenu .menu a {
+  max-width: 80px;
+  padding: 11px 0;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.head .header .navmenu .menu a:hover {
+  background: pink;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+}
+
+.category .category-name {
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.category .category-name p:nth-child(1) {
+  font-size: 30px;
+}
+
+.category .category__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category .category__sort .category__sort-item {
+  position: relative;
+  padding: 0 30px;
+}
+
+.category .category__sort .category__sort-item #name,
+.category .category__sort .category__sort-item #size {
+  width: 150px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.category .category__sort .category__sort-item li span {
+  border-bottom: 1px solid black;
+}
+
+.category .category__sort .category__sort-item ul {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.category .category__sort .category__sort-item ul li:hover ul {
+  display: block;
+  background: #f1efef;
+}
+
+.category .category__sort .category__sort-item ul li:hover li:hover {
+  background: #c5c2c2;
+}
+
+.category .category__sort .category__sort-item ul ul {
+  display: none;
+}
+
+.elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.elements .elements-item {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid black;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 305px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1040px) {
+  .elements .elements-item {
+    -webkit-box-flex: 33.33%;
+        -ms-flex: 33.33%;
+            flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .elements .elements-item {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+}
+
+.elements .elements-item .content {
+  background: #aaa7a7;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.preloader {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: url("../icon/preloader.svg") no-repeat;
+  background-size: contain;
+}
+
+.number-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+.number-page .number-item {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid black;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.number-page .active_btn {
+  background: white;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
